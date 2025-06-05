@@ -46,8 +46,8 @@ An ultra-fast, AI-powered resume screening system that uses OpenAI's GPT-4o-mini
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/ai-powered-ats.git
-cd ai-powered-ats
+git clone https://github.com/Abhinav140902/ats-openai.git
+cd ats-openai
 ```
 
 2. **Set up environment**
@@ -64,8 +64,8 @@ mkdir -p data/resumes
 
 4. **Run with Docker**
 ```bash
-docker-compose up -d
-docker exec -it ai-powered-ats-ats-app-1 python app.py
+docker-compose build ats-app
+docker-compose run --rm ats-app python app.py
 ```
 
 ## 💡 Usage
@@ -186,10 +186,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- Create an [Issue](https://github.com/yourusername/ai-powered-ats/issues)
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- Create an [Issue](https://github.com/Abhinav140902/ats-openai.git/issues)
+- Email: abhinav140902@gmail.com
 
 ---
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by Abhinav Tadepalli
