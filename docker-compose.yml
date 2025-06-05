@@ -1,0 +1,24 @@
+services:
+  ats-app:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./.env:/app/.env
+      - ./logs:/app/logs
+    stdin_open: true
+    tty: true
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+volumes:
+  redis_data:

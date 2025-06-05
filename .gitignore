@@ -1,0 +1,22 @@
+# Environment
+.env
+*.pyc
+__pycache__/
+
+# Data
+data/resumes/*
+data/faiss_index/*
+data/cache/*
+!data/resumes/.gitkeep
+!data/faiss_index/.gitkeep
+!data/cache/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
